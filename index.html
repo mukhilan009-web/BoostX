@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoostX | Social media marketing and brand promotion</title>
+<meta name="description" content="BoostX helps small businesses and creators get noticed online and turn attention into enquiries. Book a free discovery call or chat on WhatsApp.">
+<meta property="og:title" content="BoostX — Boost Your Brand. Grow Faster.">
+<meta property="og:description" content="Social media, short-form content, paid ads, landing pages, influencer coordination and reporting for growing businesses.">
+<meta property="og:type" content="website">
+<!-- GA4 placeholder: replace G-XXXXXXXXXX before launch
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- Meta Pixel placeholder: replace PIXEL_ID_HERE before launch
+<script>!function(f,b,e,v,n,t,s){...}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID_HERE');fbq('track','PageView');</script>
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1466; --blue:#0B5FFF; --sky:#12A0FF; --violet:#7B3FF2; --pale:#F2F5FF;
+  --white:#ffffff; --border:#D8E1FA; --text:#1C1F33; --muted:#5B6382; --radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--text);background:var(--white);line-height:1.6}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;color:var(--navy);line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,4vw,2.85rem)}
+h2{font-size:clamp(1.5rem,3vw,2.1rem)}
+h3{font-size:1.2rem;margin-bottom:.35em}
+p{margin:0 0 1em;max-width:62ch;color:var(--muted)}
+a{color:var(--blue)}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:.75em 1.25em;z-index:100;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 1.5rem}
+section{padding:4.5rem 0}
+.alt{background:var(--pale)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.85em 1.6em;border-radius:999px;font-weight:600;text-decoration:none;font-family:'Inter',sans-serif;border:2px solid transparent;cursor:pointer;font-size:1rem}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:#0A50D8}
+.btn-secondary{background:#fff;color:var(--navy);border-color:var(--border)}
+.btn-secondary:hover{border-color:var(--blue)}
+header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);z-index:50}
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;max-width:1140px;margin:0 auto}
+.logo{font-family:'Sora',sans-serif;font-weight:800;color:var(--navy);font-size:1.3rem;text-decoration:none}
+nav ul{list-style:none;display:flex;gap:1.75rem;margin:0;padding:0}
+nav a{color:var(--text);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--blue)}
+.nav-cta{display:flex;align-items:center;gap:1rem}
+.menu-toggle{display:none;background:none;border:1px solid var(--border);border-radius:8px;padding:.5em .7em;font-size:1.1rem}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.eyebrow{color:var(--blue);font-weight:600;margin-bottom:.5rem}
+.chip{display:inline-block;background:var(--pale);border:1px solid var(--border);color:var(--navy);font-size:.8rem;font-weight:600;padding:.3em .9em;border-radius:999px;margin-bottom:1em}
+.cta-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem}
+.card ul{margin:0;padding-left:1.1em;color:var(--muted)}
+.card li{margin-bottom:.4em}
+.badge{display:inline-block;font-size:.75rem;font-weight:700;color:var(--violet);border:1px solid var(--violet);border-radius:999px;padding:.15em .8em;margin-bottom:.75em}
+.process-row{display:flex;gap:1.25rem;overflow-x:auto;padding-bottom:.5rem}
+.step{flex:1;min-width:180px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+.step-num{width:2.1em;height:2.1em;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:.75rem;font-family:'Sora',sans-serif}
+.work-thumb{height:120px;border-radius:12px 12px 0 0;margin:-1.75rem -1.75rem 1rem}
+.t1{background:linear-gradient(135deg,var(--sky),var(--blue))}
+.t2{background:linear-gradient(135deg,var(--violet),var(--blue))}
+.t3{background:linear-gradient(135deg,var(--blue),var(--navy))}
+.pkg{position:relative}
+.pkg.featured{border-color:var(--blue);box-shadow:0 8px 24px rgba(11,95,255,.15)}
+.pkg h3{display:flex;justify-content:space-between;align-items:center}
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem}
+form{display:flex;flex-direction:column;gap:1rem}
+label{font-weight:600;font-size:.9rem;display:block;margin-bottom:.3em}
+input,select,textarea{width:100%;padding:.75em;border:1px solid var(--border);border-radius:10px;font-family:inherit;font-size:1rem}
+textarea{min-height:110px}
+.success{background:#E9F7EF;border:1px solid #9FDEB6;color:#1B6B3A;padding:1em;border-radius:10px;display:none}
+.success.show{display:block}
+footer{background:var(--navy);color:#C7D0F5;padding:2.5rem 0;margin-top:2rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+footer a{color:#C7D0F5}
+.illus{width:100%;height:auto}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media (max-width:860px){
+  nav,.nav-cta .btn-secondary{display:none}
+  .menu-toggle{display:block}
+  .nav-cta{gap:.5rem}
+  .hero-grid,.grid-2,.grid-3,.contact-grid{grid-template-columns:1fr}
+  .process-row{flex-direction:column}
+}
+header.open nav{display:block;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:1rem 1.5rem}
+header.open nav ul{flex-direction:column;gap:1rem}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header id="site-header">
+  <div class="nav-row">
+    <a class="logo" href="#top">BoostX</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-secondary">Get a free plan</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="site-header" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="chip">Marketing for small businesses &amp; creators</p>
+        <h1>Boost Your Brand. Grow Faster.</h1>
+        <p>We help growing businesses get noticed online and turn attention into enquiries — with content, ads, and landing pages scoped clearly, not sold on hype.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Get a free plan</a>
+          <a href="#" id="heroWhatsapp" class="btn btn-secondary" data-track="whatsapp_click">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <svg class="illus" viewBox="0 0 400 260" role="img" aria-labelledby="chartTitle">
+        <title id="chartTitle">Illustration of an upward growth chart</title>
+        <rect x="0" y="0" width="400" height="260" rx="20" fill="#F2F5FF"/>
+        <polyline points="30,200 110,160 190,180 270,100 370,60" fill="none" stroke="#7B3FF2" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#0B5FFF">
+          <rect x="40" y="190" width="24" height="40" rx="4"/>
+          <rect x="120" y="150" width="24" height="80" rx="4"/>
+          <rect x="200" y="170" width="24" height="60" rx="4"/>
+          <rect x="280" y="90" width="24" height="140" rx="4"/>
+          <rect x="350" y="50" width="24" height="180" rx="4"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="alt" id="who-we-help">
+    <div class="wrap">
+      <h2>Who we help</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Local shops &amp; businesses</h3>
+          <p>You're busy running the business and don't have time to figure out ads, content, or tracking.</p>
+          <ul><li>Turn foot traffic and search into steady enquiries</li><li>A clear monthly plan you can actually follow</li></ul>
+        </div>
+        <div class="card">
+          <h3>Creators &amp; influencers</h3>
+          <p>You've got an audience but need structure around content, brand deals, and reporting.</p>
+          <ul><li>Consistent short-form content without burnout</li><li>Simple reporting on what's actually working</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Social media</h3><p><strong>You get:</strong> a content calendar and posting.<br><strong>We need:</strong> brand assets and approvals.</p></div>
+        <div class="card"><h3>Short-form video</h3><p><strong>You get:</strong> edited reels and shorts.<br><strong>We need:</strong> raw footage or access to shoot.</p></div>
+        <div class="card"><h3>Paid advertising</h3><p><strong>You get:</strong> campaigns and budget pacing.<br><strong>We need:</strong> ad account access and monthly budget.</p></div>
+        <div class="card"><h3>Influencer promotion</h3><p><strong>You get:</strong> creator matching and briefs.<br><strong>We need:</strong> product or service for seeding.</p></div>
+        <div class="card"><h3>Landing pages</h3><p><strong>You get:</strong> a page built to convert.<br><strong>We need:</strong> offer details and testimonials.</p></div>
+        <div class="card"><h3>Analytics &amp; reporting</h3><p><strong>You get:</strong> a monthly results summary.<br><strong>We need:</strong> access to your analytics tools.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="process">
+    <div class="wrap">
+      <h2>How we work</h2>
+      <div class="process-row">
+        <div class="step"><div class="step-num">1</div><h3>Discovery</h3><p>A call to understand your business and goals.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Plan</h3><p>A scoped monthly plan with clear deliverables.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Approval</h3><p>You review and sign off before anything goes live.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Launch</h3><p>Content and campaigns go live on schedule.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Report &amp; improve</h3><p>Monthly results, with changes based on what works.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Sample work</h2>
+      <p>Concept projects, created to show our approach — not paid client work.</p>
+      <div class="grid-3">
+        <div class="card"><div class="work-thumb t1"></div><span class="badge">Concept</span><h3>Neighbourhood café</h3><p>A content concept built around a café's daily specials and regulars. Not client work; does not represent real results.</p></div>
+        <div class="card"><div class="work-thumb t2"></div><span class="badge">Concept</span><h3>Local fitness studio</h3><p>A launch-campaign concept for a studio's new class schedule. Not client work; does not represent real results.</p></div>
+        <div class="card"><div class="work-thumb t3"></div><span class="badge">Concept</span><h3>Creator channel</h3><p>A content-structure concept for a creator growing a niche audience. Not client work; does not represent real results.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="packages">
+    <div class="wrap">
+      <h2>Packages</h2>
+      <div class="grid-3">
+        <div class="card pkg"><h3>Starter</h3><p>Social media management and monthly reporting for businesses just getting started.</p><ul><li>Content calendar</li><li>Posting &amp; community replies</li><li>Monthly report</li></ul></div>
+        <div class="card pkg featured"><h3>Growth <span class="badge">Featured</span></h3><p>Our most popular plan — content, ads, and reporting working together.</p><ul><li>Everything in Starter</li><li>Paid ad campaigns</li><li>Short-form video</li><li>Landing page updates</li></ul></div>
+        <div class="card pkg"><h3>Custom</h3><p>For businesses with specific needs — influencer campaigns, multiple channels, or bigger budgets.</p><ul><li>Scoped to your goals</li><li>Flexible channel mix</li></ul></div>
+      </div>
+      <p style="margin-top:1.5rem;font-size:.9rem">Pricing is confirmed on your discovery call.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>About BoostX</h2>
+        <p>We started BoostX because small businesses deserve the same clear thinking as big brands — without the jargon or the inflated promises. We tell you what we're doing and why, every month.</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@boostx.example" id="contactEmail">hello@boostx.example</a><br>
+        <strong>WhatsApp:</strong> <a href="#" id="contactWhatsapp" data-track="whatsapp_click">Message us</a><br>
+        <strong>We reply within:</strong> 1 business day</p>
+        <p style="font-size:.85rem">We only use your details to respond to your enquiry. No spam, no sharing with third parties.</p>
+      </div>
+      <div id="contact" class="card">
+        <h3>Tell us about your business</h3>
+        <div class="success" id="formSuccess" role="status">Thanks — we've received your message and will reply within 1 business day.</div>
+        <form id="leadForm" novalidate>
+          <div><label for="name">Name</label><input id="name" name="name" required></div>
+          <div><label for="business">Business name</label><input id="business" name="business" required></div>
+          <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" required></div>
+          <div><label for="site">Website or social link (optional)</label><input id="site" name="site"></div>
+          <div><label for="interest">Service interest</label>
+            <select id="interest" name="interest">
+              <option>Social media</option><option>Short-form video</option><option>Paid advertising</option>
+              <option>Influencer promotion</option><option>Landing pages</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div><label for="message">Message</label><textarea id="message" name="message"></textarea></div>
+          <button type="submit" class="btn btn-primary">Get my free plan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff;font-family:'Sora',sans-serif">BoostX</strong><br>Boost Your Brand. Grow Faster.</div>
+    <div>© <span id="year"></span> BoostX. <a href="#top">Back to top</a></div>
+  </div>
+</footer>
+
+<script>
+// ---- EDIT ME: business configuration ----
+const CONFIG = {
+  whatsappNumber: "910000000000", // replace with full number, no + or spaces
+  whatsappMessage: "Hi BoostX, I'd like a free growth plan.",
+  email: "hello@boostx.example",
+  calendarUrl: "https://cal.example.com/boostx", // replace with real booking link
+  formEndpoint: "" // replace with your form provider endpoint (e.g. Formspree) before launch
+};
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const waLink = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
+['heroWhatsapp','contactWhatsapp'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.href = waLink;
+});
+document.getElementById('contactEmail').href = `mailto:${CONFIG.email}`;
+
+function trackEvent(name, detail) {
+  // Placeholder analytics hook — wire up GA4 / Meta Pixel here.
+  // if (window.gtag) gtag('event', name, detail || {});
+  // if (window.fbq) fbq('trackCustom', name, detail || {});
+  console.log('track:', name, detail || {});
+}
+
+document.querySelectorAll('[data-track="whatsapp_click"]').forEach(el => {
+  el.addEventListener('click', () => trackEvent('whatsapp_click'));
+});
+document.querySelectorAll('a.btn-primary').forEach(el => {
+  el.addEventListener('click', () => trackEvent('cta_click', { label: el.textContent.trim() }));
+});
+
+const menuToggle = document.getElementById('menuToggle');
+const header = document.getElementById('site-header');
+menuToggle.addEventListener('click', () => {
+  const open = header.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', open);
+});
+
+const form = document.getElementById('leadForm');
+let formStarted = false;
+form.addEventListener('focusin', () => {
+  if (!formStarted) { trackEvent('form_start'); formStarted = true; }
+});
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  // Replace with a real submission once CONFIG.formEndpoint is set, e.g.:
+  // fetch(CONFIG.formEndpoint, { method: 'POST', body: new FormData(form) });
+  trackEvent('form_submit');
+  document.getElementById('formSuccess').classList.add('show');
+  form.reset();
+});
+</script>
+</body>
+</html>
